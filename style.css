@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Open+Sans&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Open+Sans&display=swap');
 
 html,body
 {
@@ -38,11 +38,11 @@ html,body
 .sign {
     position:relative;
     top: 125px;
-    width: 110px;
+    width: 14%;
     height: 100px;
     margin: 2px;
     padding: .5rem .12rem;
-    font-size: .96em;
+    font-size: .86em;
     background: none;
     color: white;
     transition-duration: .5s;
@@ -174,8 +174,18 @@ h2 {
 
 }
 
-@media only screen and (max-width: 1084px) {
+.signsDiv{
     
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1084px) {
+    .allSigns {
+        position: relative;
+        width: 10%;
+      }
     .signLoveDiv {
         height: 324px;
         margin-top: -18px;
@@ -199,185 +209,50 @@ h2 {
        right: 50px;
     }
 
-    .sign {
-        position:relative;
-        top: 125px;
-        width: 100px;
-        height: 100px;
-        margin: 2px;
-        padding: .5rem .12rem;
-        font-size: .87em;
-        background: none;
-        
-        transition-duration: .5s;
-        font-family:'Crafty Girls', 'Open Sans';
-       
-    }
+
 
 
    
   }
 
-  @media only screen and (max-width: 645px) {
-    
-  
-
-
-    .sign {
-        position:relative;
-        top: 125px;
-        width: 95px;
-        height: 100px;
-        margin: 2px;
-        padding: .5rem .12rem;
-        font-size: .82em;
-        background: none;
-    
-        transition-duration: .5s;
-        font-family:'Crafty Girls', 'Open Sans';
-       
-    }
+  @media only screen and (max-width: 703px) {
+      .sign {
+        font-size: .8em
+      }
 
     
    
   }
 
 
-    @media only screen and (max-width: 613px) {
+    @media only screen and (max-width: 665px) {
     
-  
-
-
-    .sign {
-        position:relative;
-        top: 125px;
-        width: 93px;
-        height: 100px;
-        margin: 2px;
-        padding: .5rem .12rem;
+  .sign {
         font-size: .8em;
-        background: none;
+        width: 20%;
+        height: 90px;
+        top: 103px; 
+        font-size: .8em
+      }
 
-        transition-duration: .5s;
-        font-family:'Crafty Girls', 'Open Sans';
-       
-    }
 
-    
-   
-  }
-
-  
-    @media only screen and (max-width: 605px) {
-    
-    .sign {
-        position:relative;
-        top: 100px;
-        width: 93px;
-        height: 100px;
-        margin: 2px;
-        padding: .5rem .12rem;
-        font-size: .8em;
-        background: none;
-   
-        transition-duration: .5s;
-        font-family:'Crafty Girls', 'Open Sans';
-       
-    }  
-
-.background {
-    
-    background: url("images/astronomy-3183482.jpg") no-repeat center center scroll;
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    top: 0;
-    height: 425px;
-    padding-top: 10px;
-
-}
-
-.pageTitle {
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0px auto;
-    width:342px;
-    color: white;
-    border: 2px outset #a4a7ab8a;
-    box-shadow: 20px 20px 43px 15px #965e9a80;
-    font-family:'Crafty Girls', 'Open Sans';
-}
 
     
    
   }
+
+
 
       @media only screen and (max-width: 380px) {
     
-    .sign {
-        position:relative;
-        top: 100px;
-        width: 93px;
-        height: 71px;
-        margin: 2px;
-        padding: .5rem .12rem;
-        font-size: .8em;
-        background: none;
-   
-        transition-duration: .5s;
-        font-family:'Crafty Girls', 'Open Sans';
-       
-    }  
 
-.background {
-    
-    background: url("images/astronomy-3183482.jpg") no-repeat center center scroll;
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    top: 0;
-    height: 410px;
-    padding-top: 10px;
-
-}
-
-.pageTitle {
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0px auto;
-    width:342px;
-    color: white;
-    border: 2px outset #a4a7ab8a;
-    box-shadow: 20px 20px 43px 15px #965e9a80;
-    font-family:'Crafty Girls', 'Open Sans';
-}
-
-    
-   
-  }
-
-
- @media only screen and (max-width: 330px) {
-    
-
-
-
-
-
-.pageTitle {
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0px auto;
-    width:289px;
-    color: white;
-    border: 2px outset #a4a7ab8a;
-    box-shadow: 20px 20px 43px 15px #965e9a80;
-    font-family:'Crafty Girls', 'Open Sans';
-    font-size: .8em
-}
+      .sign {
+        
+        width: 19%;
+        height: 84px;
+        top: 103px; 
+        font-size: .7em
+      }
 
     
    
