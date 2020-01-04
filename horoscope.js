@@ -1,19 +1,35 @@
-var userId = '';
-var apiKey = '';
-var data = 'JSON Request Data';
-var request = $.ajax({
-url: "https://json.astrologyapi.com/v1/"+api,
-method: "POST",
-dataType:'json',
-headers: {
-"authorization": "Basic " + btoa(userId+":"+apiKey),
-"Content-Type":'application/json'
-},
-data:JSON.stringify(data)
-});
-// Returns A promiss
-return( request.then( function(resp){
-console.log(Response);
-}, function(err){
-return err;
-}));
+const astroDict = {
+    'Aries': {},
+    'Taurus':{},
+    'Gemini':{},
+    'Cancer':{},
+    'virgo':{},
+    'Aquarius':{},
+    'Pisces':{},
+    'Leo':{},
+    'Libra':{},
+    'Scorpio':{},
+    'sagittarius':{},
+    'capricorn':{},
+}
+
+$("button").on("click", function () {
+$.ajax({
+    type: 'POST',
+    url: `https://aztro.sameerkumar.website/?sign=data&day=today`,
+    data: {
+        param0: $('button').val()
+    },
+    success: function (data) {
+        console.log(data);
+    }
+})});
+
+$("button").on("click", function (){
+    $.ajax({
+        method: 'GET',
+        url: 'https://zodiacal.herokuapp.com/cardinalities',
+        success: function (data) {
+            console.log(data);
+        }
+    })});
