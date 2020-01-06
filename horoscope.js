@@ -1,35 +1,23 @@
-const astroDict = {
-    'Aries': {},
-    'Taurus':{},
-    'Gemini':{},
-    'Cancer':{},
-    'virgo':{},
-    'Aquarius':{},
-    'Pisces':{},
-    'Leo':{},
-    'Libra':{},
-    'Scorpio':{},
-    'sagittarius':{},
-    'capricorn':{},
-}
 
-$("button").on("click", function () {
-$.ajax({
-    type: 'POST',
-    url: `https://aztro.sameerkumar.website/?sign=data&day=today`,
-    data: {
-        param0: $('button').val()
-    },
-    success: function (data) {
-        console.log(data);
-    }
-})});
 
-$("button").on("click", function (){
+let hi = document.querySelectorAll(".sign")
+
+hi.forEach(function(e){
+    e.addEventListener("click", function (e) {
+        e.preventDefault
+        let pp = this.id
+ 
+    
     $.ajax({
-        method: 'GET',
-        url: 'https://zodiacal.herokuapp.com/cardinalities',
-        success: function (data) {
-            console.log(data);
+        type:'POST',
+        url:'https://aztro.sameerkumar.website?sign=' + pp + '&day=today',
+        success:function(data){
+            
+            $(".horoP").text(data.description);
         }
     })});
+})
+
+
+
+

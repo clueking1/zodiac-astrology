@@ -1,13 +1,20 @@
-var userId = '';
-var apiKey = '';
-var data = 'JSON Request Data';
-var request = $.ajax({
-    url: "https://json.astrologyapi.com/v1/" + apiKey,
-    method: "POST",
-    dataType: 'json',
-    headers: {
-        "authorization": "Basic " + btoa(userId + ":" + apiKey),
-        "Content-Type": 'application/json'
-    },
-    data: JSON.stringify(data)
-}).then( res => console.log(res))
+let bye= document.querySelectorAll(".sign")
+
+bye.forEach(function(e){
+        e.addEventListener("click", function (e) {
+                        const proxyurl = "https://cors-anywhere.herokuapp.com/"
+                        e.preventDefault
+                        let pp = this.value
+                     
+                        $.ajax({
+                            method: 'GET',
+                            url: proxyurl + 'https://zodiacal.herokuapp.com/cardinalities/' + pp,
+                            success: function (data) {
+                              
+                                $(".compatP").text(data[0].description)
+                            }
+                        })});
+                    
+                  
+                })
+                  

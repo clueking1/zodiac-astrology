@@ -182,6 +182,14 @@ h2 {
     margin: 0 auto;
 }
 
+.horoP {
+  padding: 10px
+}
+
+.compatP {
+  padding: 10px
+}
+
 @media only screen and (max-width: 1084px) {
     .allSigns {
         position: relative;
@@ -209,9 +217,14 @@ h2 {
     .horoDis {
        right: 50px;
     }
+    
+    .compatP {
+      padding: 10px;
+    }
 
-
-
+    .horoP {
+      padding: 10px;
+    }
 
    
   }
