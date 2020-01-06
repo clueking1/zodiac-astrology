@@ -118,7 +118,7 @@ html,body
     font-family:'Crafty Girls', 'Open Sans';
     height: 400px;
     width: 50%;
-    max-height: 800px;
+    max-height: 400px;
     float: left;
     text-align:center;
     background-image: radial-gradient(rgba(228, 198, 32, 0.05), rgba(19, 72, 31, 0.05));
@@ -133,6 +133,7 @@ html,body
     height: 400px;
     text-align: center;
     background-image: radial-gradient(rgba(61, 50, 187, 0.07), rgb(238, 244, 251));
+  
 
 }
 
@@ -155,12 +156,12 @@ h2 {
     height: 200px;
     box-shadow: 20px 20px 50px 15px #965e9aa1;
     overflow: scroll;
-     right: 20px;
+    right: 20px;
     
 
 }
 
-.compatP {
+.compatDiv {
     
     border: 2px groove;
     width: 75%;
@@ -201,7 +202,7 @@ h2 {
       float: none;
     }
     
-    .compatP {
+    .compatDiv {
       right: 50px;
     }
 
@@ -239,21 +240,81 @@ h2 {
 
     
    
+  } 
+
+  @media only screen and (max-width: 415px) {
+      .sign {
+        
+        width: 21%;
+        height: 84px;
+        top: 113px; 
+        font-size: .7em
+      }
+        .signDate {
+        font-size: 7px
+      }
   }
 
+      @media only screen and (max-width: 412px) {
+        .sign {
+        
+        width: 21%;
+        height: 84px;
+        top: 113px; 
+        font-size: .7em
+      }
+        .signDate {
+        font-size: 7px
+      }
 
+      }
 
       @media only screen and (max-width: 380px) {
     
 
       .sign {
         
-        width: 19%;
+        width: 21%;
         height: 84px;
-        top: 103px; 
+        top: 113px; 
         font-size: .7em
       }
 
-    
+      .pageTitle {
+        width: 341px;
+      }
+      
+      .signDate {
+        font-size: 7px
+      }
    
+  }
+
+        @media only screen and (max-width: 321px) {
+    
+
+      .sign {
+        
+        width: 21.5%;
+        height: 84px;
+        top: 106px; 
+        font-size: .7em
+      }
+
+      .pageTitle {
+        width: 304px;
+        font-size: .9em;
+      }
+      
+      .signDate {
+        font-size: 6px
+      }
+      
+ .horoDis {
+       right: 71px;
+    }
+    
+    .compatDiv {
+      right: 71px;
+    }
   }
