@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls|Open+Sans&display=swap');
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+.background {
+    
+    background: url("images/astronomy-3183482.jpg") no-repeat center center scroll;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    top: 0;
+    height: 400px;
+    padding-top: 10px;
+
+}
+
+.pageTitle {
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0px auto;
+    width:375px;
+    color: white;
+    border: 2px outset #a4a7ab8a;
+    box-shadow: 20px 20px 43px 15px #965e9a80;
+    font-family:'Crafty Girls', 'Open Sans';
+}
+
+.sign {
+    position:relative;
+    top: 125px;
+    width: 14%;
+    height: 100px;
+    margin: 2px;
+    padding: .5rem .12rem;
+    font-size: .86em;
+    background: none;
+    color: white;
+    transition-duration: .5s;
+    font-family:'Crafty Girls', 'Open Sans';
+   
+  
+  
+}
+
+.signsDiv {
+    position: sticky;
+}
+
+.water {
+    border: 5px outset #547ba28a;
+    color:#96b4f9; 
+ }
+ 
+ .fire {
+    border: 5px outset #a254548a;
+    color:#d27d7d;  
+ }
+ 
+ .air {
+    border: 5px outset #999fa58a; 
+     color:#d2cece;
+ }
+ 
+ .earth {
+    border: 5px outset #40945d75;
+    color:#40b357; 
+ }
+
+
+.signDate {
+    
+    font-size: .7em;
+    color: #ebf5f596;
+    font-family:'Open Sans';
+}
+
+.fire:hover {
+    
+    background-image: radial-gradient(rgba(255, 0, 0, 0.336), rgba(255, 255, 0, 0.247));
+    transform: scale(1.1); 
+    box-shadow: 10px 10px 8px #c72e2e69;
+   
+}
+
+.air:hover {
+     background-image: radial-gradient(rgba(150, 31, 106, 0.75), rgba(132, 132, 92, 0.69));
+    transform: scale(1.1); 
+    box-shadow: 10px 10px 8px #96919169;
+   
+}
+
+.water:hover {
+     background-image: radial-gradient(rgba(61, 50, 187, 0.28), rgba(20, 192, 243, 0.47));
+    transform: scale(1.1); 
+    box-shadow: 10px 10px 8px #865be078;
+   
+}
+
+.earth:hover {
+     background-image: radial-gradient(rgba(236, 203, 20, 0.37), rgba(19, 72, 31, 0.48));
+    transform: scale(1.1); 
+    box-shadow: 10px 10px 8px #19881b47;
+   
+}
+
+.horoDiv {
+    
+    font-family:'Crafty Girls', 'Open Sans';
+    height: 400px;
+    width: 50%;
+    max-height: 400px;
+    float: left;
+    text-align:center;
+    background-image: radial-gradient(rgba(228, 198, 32, 0.05), rgba(19, 72, 31, 0.05));
+
+    top: 200px;
+}
+
+.signLoveDiv {
+    font-family:'Crafty Girls', 'Open Sans';
+    width: 50%;
+    float: left;
+    height: 400px;
+    text-align: center;
+    background-image: radial-gradient(rgba(61, 50, 187, 0.07), rgb(238, 244, 251));
+  
+
+}
+
+h2 {
+        margin-left: 50px;
+        border-bottom: 2px solid #c6c6ce8c; 
+        width: 129px;
+        box-shadow: 10px 10px 8px #b79db9a1;
+        font-size: 134%
+    
+}
+
+.horoDis {
+    
+    border: 2px groove;
+    width: 75%;
+    position: relative;
+    margin-left: 128px;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 20px 20px 50px 15px #965e9aa1;
+    overflow: scroll;
+    right: 20px;
+    
+
+}
+
+.compatDiv {
+    
+    border: 2px groove;
+    width: 75%;
+    position: relative;
+    margin-left: 128px;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 20px 20px 50px 15px #71b4f399;
+    overflow: scroll;
+    right: 20px;
+
+}
+
+.signsDiv{
+    
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.horoP {
+  padding: 10px
+}
+
+.compatP {
+  padding: 10px
+}
+
+@media only screen and (max-width: 1084px) {
+    .allSigns {
+        position: relative;
+        width: 10%;
+      }
+    .signLoveDiv {
+        height: 324px;
+        margin-top: -18px;
+      width: 100%;
+      float: none;
+    
+    }
+
+    .horoDiv {
+        height: 324px;
+        margin-top: -17px;
+      width: 100%;
+      float: none;
+    }
+    
+    .compatDiv {
+      right: 50px;
+    }
+
+    .horoDis {
+       right: 50px;
+    }
+    
+    .compatP {
+      padding: 10px;
+    }
+
+    .horoP {
+      padding: 10px;
+    }
+
+   
+  }
+
+  @media only screen and (max-width: 703px) {
+      .sign {
+        font-size: .8em
+      }
+
+    
+   
+  }
+
+
+    @media only screen and (max-width: 665px) {
+    
+  .sign {
+        font-size: .8em;
+        width: 20%;
+        height: 90px;
+        top: 103px; 
+        font-size: .8em
+      }
+
+
+
+    
+   
+  } 
+
+  @media only screen and (max-width: 415px) {
+      .sign {
+        
+        width: 21%;
+        height: 84px;
+        top: 113px; 
+        font-size: .7em
+      }
+        .signDate {
+        font-size: 7px
+      }
+  }
+
+      @media only screen and (max-width: 412px) {
+        .sign {
+        
+        width: 21%;
+        height: 84px;
+        top: 113px; 
+        font-size: .7em
+      }
+        .signDate {
+        font-size: 7px
+      }
+
+      }
+
+      @media only screen and (max-width: 380px) {
+    
+
+      .sign {
+        
+        width: 21%;
+        height: 84px;
+        top: 113px; 
+        font-size: .7em
+      }
+
+      .pageTitle {
+        width: 341px;
+      }
+      
+      .signDate {
+        font-size: 7px
+      }
+   
+  }
+
+        @media only screen and (max-width: 321px) {
+    
+
+      .sign {
+        
+        width: 21.5%;
+        height: 84px;
+        top: 106px; 
+        font-size: .7em
+      }
+
+      .pageTitle {
+        width: 304px;
+        font-size: .9em;
+      }
+      
+      .signDate {
+        font-size: 6px
+      }
+      
+ .horoDis {
+       right: 71px;
+    }
+    
+    .compatDiv {
+      right: 71px;
+    }
+  }
